@@ -1,11 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit';
 import type {PayloadAction, Slice} from '@reduxjs/toolkit';
-
-// Define a type for the slice state
-export interface School {
-  school_id: number;
-  name: string;
-}
+import {School} from '@/src/types/School';
 
 export type SchoolsState = {
   data: School[];
