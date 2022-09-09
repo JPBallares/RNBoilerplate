@@ -32,6 +32,7 @@ try {
 const getStories = () => {
   return [
     require("../__stories__/components/Button.stories.tsx"),
+    require("../__stories__/components/SchoolItem.stories.tsx"),
     require("../__stories__/navigators/NavItems/DrawerItem.stories.tsx"),
   ];
 };
