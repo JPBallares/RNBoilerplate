@@ -1,13 +1,9 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  useColorScheme,
-} from 'react-native';
+import {StatusBar, StyleSheet, useColorScheme} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {Provider} from 'react-redux';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 import NavigationRouter from './navigators/NavigationRouter';
 import store from './redux/store';
 
@@ -20,10 +16,10 @@ const App = () => {
 
   return (
     <Provider store={store}>
-      <SafeAreaView style={[backgroundStyle, styles.appContainer]}>
+      <SafeAreaProvider style={[backgroundStyle, styles.appContainer]}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
         <NavigationRouter />
-      </SafeAreaView>
+      </SafeAreaProvider>
     </Provider>
   );
 };

@@ -22,6 +22,8 @@
     "@react-native-community/slider": "^4.2.1",
     "@react-navigation/native": "^6.0.12",
     "@reduxjs/toolkit": "^1.8.5",
+    "@rneui/base": "^4.0.0-rc.6",
+    "@rneui/themed": "^4.0.0-rc.6",
     "axios": "^0.27.2",
     "babel-plugin-react-native-web": "^0.18.9",
     "react": "18.1.0",

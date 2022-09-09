@@ -1,7 +1,7 @@
 import axios, {AxiosResponse} from 'axios';
 import {call, put} from 'redux-saga/effects';
 import {PayloadAction} from '@reduxjs/toolkit';
-import {API_TOKEN, SCHOOLS_API_URL} from '@/src/config/url';
+import {API_TOKEN, SCHOOLS_API_URL} from '@/src/config/urls';
 import {getAllSchoolsFailure, getAllSchoolsSuccess} from '../slices/Schools';
 import type {SchoolsActionType} from '../slices/Schools';
 
